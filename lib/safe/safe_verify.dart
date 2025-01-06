@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:project/safe/r_dotted_line_border.dart';
@@ -85,7 +84,7 @@ class _DemoVerityState extends State<DemoVerity> with TickerProviderStateMixin {
       ),
     );
 
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       final size = context.size ?? Size.zero;
 
       final x1 = radius + Random().nextInt((size.width - radius * 2.2).toInt());

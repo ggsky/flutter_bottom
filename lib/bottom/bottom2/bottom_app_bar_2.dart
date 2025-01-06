@@ -46,7 +46,7 @@ class _BottomAppBar2State extends State<BottomAppBar2>
     });
     animationController.animateTo(1.0, duration: Duration.zero);
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) => getInitState());
+    WidgetsBinding.instance.addPostFrameCallback((_) => getInitState());
 
     super.initState();
   }

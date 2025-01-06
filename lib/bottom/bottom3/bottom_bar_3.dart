@@ -302,7 +302,7 @@ class _BottomBar3State extends State<BottomBar3> with TickerProviderStateMixin {
                     highlightColor: Colors.transparent,
                     focusColor: Colors.transparent,
                     onTap: () {
-                      Overlay.of(context)!.insert(entry);
+                      Overlay.of(context).insert(entry);
                       widget.addClick();
                       // 执行旋转动画 && 缩放动画
                       centerBtnAnimationController.forward();

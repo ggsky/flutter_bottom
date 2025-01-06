@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:project/safe/verify_page.dart';
 
 class SafePage extends StatefulWidget {

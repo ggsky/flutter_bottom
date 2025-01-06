@@ -61,7 +61,7 @@ class _BottomAppBar11State extends State<BottomAppBar11>
   void initState() {
     super.initState();
     iconLength = widget.iconList.length;
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       setState(() {
         itemWidth = context.size!.width / iconLength;
         iconPadding = (itemWidth - indicatorSize) / 2;

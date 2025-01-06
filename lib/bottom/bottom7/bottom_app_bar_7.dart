@@ -51,7 +51,7 @@ class _BottomAppBar7State extends State<BottomAppBar7>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       itemWidth =
           (context.size!.width - barHeight) / (widget.iconList.length - 1);
       setState(() {});
