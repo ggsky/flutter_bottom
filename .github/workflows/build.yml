@@ -1,0 +1,63 @@
+name: CI
+on:
+  push:
+    branches: [ master , main]
+  pull_request:
+    branches: [ master , main]
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: "11"
+
+      - name: Setup gradle
+        uses: eskatos/gradle-command-action@v1
+        with:
+          gradle-version: 7.3.3
+
+      - name: Flutter action
+        uses: subosito/flutter-action@v1.5.3
+        with:
+          channel: "stable"
+          flutter-version: "3.13.8"
+      
+      - name: Cache Dependencies
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            Pods
+          key: |
+            ${{runner.OS}}-gradle-caches-${{ hashFiles('pubspec.lock') }}
+            ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+            ${{ runner.os }}-gradle-
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: flutter pub get
+
+      - name: Build apk
+        if: ${{ runner.os == 'Linux' }}
+        run: |
+          flutter build apk --debug --split-per-abi
+          flutter build web 
+      
+      - name: github pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ runner.os == 'Linux' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
