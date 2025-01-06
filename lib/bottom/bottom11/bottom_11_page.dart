@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:project/bottom/bottom11/tabIcon_data.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/bottom/bottom11/tabIcon_data.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 import 'bottom_app_bar_11.dart';
 
 /// flutter 拉面菜单

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom10/tabIcon_data.dart';
+import 'package:flutter_bottom/bottom/bottom10/tabIcon_data.dart';
 
 class TabIcons extends StatefulWidget {
   const TabIcons({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:project/bottom/bottom2/tab_clipper.dart';
+import 'package:flutter_bottom/bottom/bottom2/tab_clipper.dart';
 
 import 'tabIcon_data.dart';
 import 'tab_icons.dart';

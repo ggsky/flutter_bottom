@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:project/safe/safe_verify.dart';
+import 'package:flutter_bottom/safe/safe_verify.dart';
 
 class VerifyPage extends StatefulWidget {
   @override

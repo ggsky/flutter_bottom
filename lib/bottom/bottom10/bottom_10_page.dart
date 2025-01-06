@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom10/tabIcon_data.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/bottom/bottom10/tabIcon_data.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 import 'bottom_app_bar_10.dart';
 
 /// flutter 圈圈

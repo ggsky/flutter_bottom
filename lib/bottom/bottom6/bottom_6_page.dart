@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 
 /// flutter 自带菜单 仿咸鱼
 class Bottom6Page extends StatefulWidget {

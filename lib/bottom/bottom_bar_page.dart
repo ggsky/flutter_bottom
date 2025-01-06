@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom1/bottom_1_page.dart';
-import 'package:project/bottom/bottom10/bottom_10_page.dart';
-import 'package:project/bottom/bottom11/bottom_11_page.dart';
-import 'package:project/bottom/bottom2/bottom_2_page.dart';
-import 'package:project/bottom/bottom3/bottom_3_page.dart';
-import 'package:project/bottom/bottom4/bottom_4_page.dart';
-import 'package:project/bottom/bottom5/bottom_5_page.dart';
-import 'package:project/bottom/bottom6/bottom_6_page.dart';
-import 'package:project/bottom/bottom7/bottom_7_page.dart';
-import 'package:project/bottom/bottom8/bottom_8_page.dart';
-import 'package:project/bottom/bottom9/bottom_9_page.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/bottom/bottom1/bottom_1_page.dart';
+import 'package:flutter_bottom/bottom/bottom10/bottom_10_page.dart';
+import 'package:flutter_bottom/bottom/bottom11/bottom_11_page.dart';
+import 'package:flutter_bottom/bottom/bottom2/bottom_2_page.dart';
+import 'package:flutter_bottom/bottom/bottom3/bottom_3_page.dart';
+import 'package:flutter_bottom/bottom/bottom4/bottom_4_page.dart';
+import 'package:flutter_bottom/bottom/bottom5/bottom_5_page.dart';
+import 'package:flutter_bottom/bottom/bottom6/bottom_6_page.dart';
+import 'package:flutter_bottom/bottom/bottom7/bottom_7_page.dart';
+import 'package:flutter_bottom/bottom/bottom8/bottom_8_page.dart';
+import 'package:flutter_bottom/bottom/bottom9/bottom_9_page.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 
 import 'bottom12/bottom_12_page.dart';
 

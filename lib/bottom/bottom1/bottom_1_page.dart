@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom1/bottom_app_bar_1.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/bottom/bottom1/bottom_app_bar_1.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 
 class Bottom1Page extends StatefulWidget {
   @override

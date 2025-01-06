@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom10/tabIcon_data.dart';
+import 'package:flutter_bottom/bottom/bottom10/tabIcon_data.dart';
 
-import 'package:project/bottom/bottom10/tab_icons.dart';
+import 'package:flutter_bottom/bottom/bottom10/tab_icons.dart';
 
 class BottomAppBar10 extends StatefulWidget {
   const BottomAppBar10({

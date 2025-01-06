@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/widget/my_app_bar.dart';
+import 'package:flutter_bottom/widget/my_app_bar.dart';
 import 'salomon_bottom_bar.dart';
 
 class Bottom12Page extends StatefulWidget {

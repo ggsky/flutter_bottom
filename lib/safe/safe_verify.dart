@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:project/safe/r_dotted_line_border.dart';
+import 'package:flutter_bottom/safe/r_dotted_line_border.dart';
 
 /// 验证widget
 /// return

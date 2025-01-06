@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project/bottom/bottom_bar_page.dart';
-import 'package:project/safe/safe_page.dart';
+import 'package:flutter_bottom/bottom/bottom_bar_page.dart';
+import 'package:flutter_bottom/safe/safe_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key, required this.title}) : super(key: key);
