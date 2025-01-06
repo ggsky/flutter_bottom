@@ -19,17 +19,12 @@ jobs:
           distribution: 'adopt'
           java-version: "11"
 
-      - name: Setup gradle
-        uses: eskatos/gradle-command-action@v1
-        with:
-          gradle-version: 7.3.3
-
       - name: Flutter action
         uses: subosito/flutter-action@v1.5.3
         with:
           channel: "stable"
           flutter-version: "3.13.8"
-      
+
       - name: Cache Dependencies
         id: cache
         uses: actions/cache@v2
@@ -52,7 +47,6 @@ jobs:
       - name: Build apk
         if: ${{ runner.os == 'Linux' }}
         run: |
-          flutter build apk --debug --split-per-abi
           flutter build web 
       
       - name: github pages
